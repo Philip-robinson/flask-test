@@ -47,7 +47,27 @@ pip install flask
 
 ## The application
 
-There are two files __database.py__ and __index.py__
+There are five files:
+* __database.py__ 
+* __index.py__
+* __templates/index.html__
+* __templates/details.html__
+* __static/style.css__
+
+### static files style.css
+
+files put in the static directory are automatically made available
+as stored.
+
+the file __static/style.css__ can be accessed in this application
+as __http://localhost:8010/static/style.css__
+
+### template files stored under templates
+
+the directory __templates__ is where template files are expected to be found
+
+there are two in this is a fairly standard style of template using {{field}}
+and {% some code %} style of modifying the code.
 
 ### database.py
 

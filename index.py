@@ -22,9 +22,11 @@ def detail(name):
         using the templates templates/detail.html """
     print("Got name "+name) 
     print("Deatil is ", pf.detail(name))
+    ret = pf.detail(name)
+    ret['timestamp'] = ret['timestamp'].strftime("%d/%m/%y %H:%M")
     return render_template('detail.html',
         title='Company display for '+name,
-        detail=pf.detail(name))
+        detail=ret)
 
 @app.route("/api/shares")
 def companies():
