@@ -23,7 +23,7 @@ def detail(name):
     print("Got name "+name) 
     print("Deatil is ", pf.detail(name))
     ret = pf.detail(name)
-    ret['timestamp'] = ret['timestamp'].strftime("%d/%m/%y %H:%M")
+    ret['timestamp'] = ret['timestamp'].strftime("%d/%m/%Y %H:%M")
     return render_template('detail.html',
         title='Company display for '+name,
         detail=ret)
