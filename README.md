@@ -33,7 +33,7 @@ And actrivate it with
 ```
 source venv/bin/activate
 ```
-microsoft equivalent
+Microsoft equivalent
 
 ```
 venv\\Scripts\\activate
@@ -57,17 +57,17 @@ There are five files:
 
 ### static files style.css
 
-files put in the static directory are automatically made available
+Files put in the static directory are automatically made available
 as stored.
 
-the file __static/style.css__ can be accessed in this application
+The file __static/style.css__ can be accessed in this application
 as __http://localhost:8010/static/style.css__
 
 ### template files stored under templates
 
 the directory __templates__ is where template files are expected to be found
 
-there are two in this is a fairly standard style of template using {{field}}
+There are two in this is a fairly standard style of template using {{field}}
 and {% some code %} style of modifying the code.
 
 There are two templates __templates/index.html__ is for the home page and looks
