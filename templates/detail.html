@@ -11,11 +11,11 @@
                 <tr><td>Shares held</td><td>{{detail.shares}}</td></tr>
                 <tr><td>Price per share</td><td>£{{detail.price}}</td></tr>
                 <tr><td>Total value</td><td>£{{detail.value}}</td></tr>
-                <tr><td>Cost</td><td>£{{detail.cost}}</td></tr>
+                <tr><td>Cost</td><td>£{{'%02.f'|format(detail.cost)|float}}</td></tr>
                 {% if detail.profit <  0 : %}
-                    <tr><td>Profit</td><td>-£{{0-detail.profit}}</td></tr>
+                    <tr><td>Profit</td><td>-£{{'%02.f'|format(detail.profit)|float}}</td></tr>
                 {% else: %}
-                    <tr><td>Profit</td><td>£{{detail.profit}}</td></tr>
+                    <tr><td>Profit</td><td>£{{'%02.f'|format(detail.profit)|float}}</td></tr>
                 {% endif %}
                 <tr><td>Date of recording</td><td>{{detail.timestamp}}</td></tr>
         </table>
