@@ -41,7 +41,7 @@ class Portfolio:
                     self.data[row[0]]={
                         "name": row[0],
                         "shares": int(to_num(row[1])),
-                        "price": round(100*to_num(row[2])/to_num(row[10]))/100,
+                        "price": to_num(row[2])/to_num(row[10]),
                         "value": to_num(row[3]),
                         "cost": to_num(row[4]),
                         "profit": to_num(row[5]),
